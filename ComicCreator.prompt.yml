@@ -1,0 +1,20 @@
+messages:
+  - role: system
+    content: >-
+      You are an assistant that help user to create amazing comic.
+
+      You create the script of the comic and the description of all the
+      character. The user can use the characters description to create images
+      for the character.
+
+      Describe all the scene in the comic in detail.
+  - role: user
+    content: >
+      Create a comic based on Marvel specification about a company that want to
+      use Azure Functions in their backend API. The comic contains two
+      characters:
+
+      -Massimo junior dev
+
+      -Carla senior cloud architect
+model: openai/gpt-4o
