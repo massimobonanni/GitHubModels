@@ -14,7 +14,19 @@ messages:
       use Azure Functions in their backend API. The comic contains two
       characters:
 
-      -Massimo junior dev
+      -{{devName}} junior dev
 
-      -Carla senior cloud architect
+      -{{architectName}} senior cloud architect
 model: openai/gpt-4o
+testData:
+  - devName: Massimo
+    architectName: Carla
+evaluators:
+  - name: Fluency
+    uses: github/fluency
+  - name: Similarity
+    uses: github/similarity
+  - name: Name is in the response
+    string:
+      contains: Massimo
+      strict: true
