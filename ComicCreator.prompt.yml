@@ -18,6 +18,10 @@ messages:
 
       -{{architectName}} senior cloud architect
 model: openai/gpt-4o
+modelParameters:
+  maxCompletionTokens: 500
+  temperature: 0.2
+  topP: 0.95
 testData:
   - devName: Massimo
     architectName: Carla
